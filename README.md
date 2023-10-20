@@ -27,7 +27,7 @@ EditThisText is a simple text editor application that allows you to create and e
 The main window of the text editor (Ubuntu, Gnome):
 ![Main Window in Ubuntu](screenshots/mainwinubuntu.png)
 
-The main window of the text editro (Ubuntu, Gnome)
+The window of the font editor (Ubuntu, Gnome)
 ![Font edit window in Ubuntu](screenshots/fonteditwinubuntu.png)
 
 ## Acknowledgments
