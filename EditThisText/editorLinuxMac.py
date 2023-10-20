@@ -158,7 +158,7 @@ class TextEditor(QMainWindow):
         self.about.setFixedSize(300, 200)
 
         self.iconLabel = QLabel(self.about)
-        self.iconLabel.setPixmap(QPixmap('icons\\icon.png'))
+        self.iconLabel.setPixmap(QPixmap('icons/icon.png'))
         self.iconLabel.setAlignment(Qt.AlignCenter)
         self.iconLabel.setGeometry(0, 0, 300, 150)
 
