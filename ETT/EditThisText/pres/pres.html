@@ -1,0 +1,259 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="welcome-slide" id="welcome-slide">
+    <h1 id="welcome-text">Welcome!</h1>
+    <button id="close-btn">▶</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="slide" id="slide1">
+      <h1>EditThisText</h1>
+      <p>EditThisText - простой и лёгкий в освоении текстовый редактор</p>
+      <button onclick="scrollToSlide('slide2')">Далее</button>
+    </div>
+    <div class="slide" id="slide2">
+      <h1>Возможности</h1>
+      <p>• Создание, редактирование и сохранение файлов<br>
+        • Окно недавних файлов с отображением файлом в порядке их последниз дат открытия<br>
+        • Копирование, вставка, вырезание,выделение всего текста<br>
+        • Лёгкая и удобная работа с шрифтами<br>
+        • Удобная панель действий<br>
+      </p>
+      <button onclick="scrollToSlide('slide3')">Требования</button>
+    </div>
+    <div class="slide" id="slide3">
+      <h1>Требования</h1>
+      <p>• Python 3.8 или выше<br>
+        • PyQt5 5.15.4 или выше<br>
+
+        • macOS 10.10 или выше<br>
+        • Windows 8 или выше<br>
+        • Linux 5 с оконным менеджером X, GDM или любым другим поддерживающим среду QT
+
+        • ЦП: 500 мГц или больше<br>
+        • ОЗУ: 128 МБ или больше<br>
+        • Графика: 128 МБ или больше<br>
+        • Свободная Память: 156 КБ и больше<br>
+      </p>
+      <button onclick="scrollToSlide('slide4')">Установить</button>
+    </div>
+    <div class="slide" id="slide4">
+      <h1>Установка</h1>
+      <p>• Склонируйте репозиторий с Github или скачайте ZIP архив оттуда<br>
+        • Установите необходимые библиотеки использовав команду pip install -r requirements.txt<br>
+        • Запустите editorLinuxMac.py или editorWindows.py в зависимости от вашей ОС</p>
+      <button onclick="scrollToSlide('slide5')">Внешний вид</button>
+    </div>
+    <div class="slide" id="slide5">
+      <h1>Внешний вид</h1>
+      <p>Вид главного окна в macOS Big Sur(11) - Sonoma(14)</p>
+      <img src="mainwin.png" alt="Main Window">
+      <button onclick="scrollToSlide('slide6')">Конец?</button>
+    </div>
+    <div class="slide" id="slide6">
+      <h1>Спасибо</h1>
+      <p>Спасибо за ваше дорогостоящее внимание и интерес к моему продукту!</p>
+      <button type="submit" onclick="window.open('UNZIPME.zip')">Скачать? (Нажми меня)</button>
+      <div class="credits">Icons made by <a href="pixabay.com">Icons8</a> and <a href="8icons.com">Pixabay</a></div>
+    </div>
+  </div>
+  <script>
+        // Define the text and subtext for different languages
+        const languages = {
+        en: {
+          text: "Welcome!",
+        },
+        ru: {
+          text: "Добро пожаловать!",
+        },
+        fr: {
+          text: "Bienvenue!"
+        },
+        es: {
+          text: "Bienvenido!",
+        },
+        de: {
+          text: "Willkommen!",
+        },
+        it: {
+          text: "Benvenuto!"
+        },
+        pt: {
+          text: "Bem-vindo!"
+        },
+        nl: {
+          text: "Welkom!"
+        },
+        tr: {
+          text: "Geldiniz!"
+        },
+        ar: {
+          text: "أهلاً و سهلاً"
+        },
+        kv: {
+          text: "Vëlgoodt!"
+        },
+        a: {
+          text: "When you were here before"
+        },
+        b: {
+          text: "Couldn't look you in the eye"
+        },
+        c: {
+          text: "You're just like an angel"
+        },
+        d: {
+          text: "Your skin makes me cry"
+        },
+        e: {
+          text: "You float like a feather"
+        },
+        f: {
+          text: "In a beautiful world"
+        },
+        g: {
+          text: "I wish I was special"
+        },
+        h: {
+          text: "You're so effin special"
+        },
+        i: {
+          text: "But Imma creep"
+        },
+        j: {
+          text: "I'm a weirdo-o-o"
+        },
+        k: {
+          text: "What the hell am I doing here"
+        },
+        l: {
+          text: "I don't belong here"
+        },
+        m: {
+          text: "I don't care if it hurts"
+        },
+        n: {
+          text: "I wanna have control"
+        },
+        o: {
+          text: "I want perfect body"
+        },
+        p: {
+          text: "I want perfect soul"
+        },
+        q: {
+          text: "I want you to notice"
+        },
+        r: {
+          text: "When I'm not around"
+        },
+        s: {
+          text: "You're so effin special"
+        },
+        t: {
+          text: "I wish I was special"
+        },
+        u: {
+          text: "But Imma creep!"
+        },
+        v: {
+          text: "I'm a weirdo-o-o"
+        },
+        w: {
+          text: "What the hell am I doin here???"
+        },
+        x: {
+          text: "I don't belong here"
+        },
+        y: {
+          text: "Sheeeeeeee's runnin out the doooor"
+        },
+        z: {
+          text: "Sheeeeeee's running out"
+        },
+        ab: {
+          text: "She run"
+        },
+        cd: {
+          text: "Ruuun"
+        },
+        ef: {
+          text: "Ruuuun"
+        },
+        gh: {
+          text: "Ruuuuun"
+        },
+        ij: {
+          text: "Ruuuuuuuuuu-a-uuun"
+        },
+        kl: {
+          text: "Whatever makes u happy"
+        },
+        mn: {
+          text: "Whatever u want"
+        },
+        op: {
+          text: "You're so effin special"
+        },
+        qr: {
+          text: "I wish I was special"
+        },
+        st: {
+          text: "But Imma creeeeep"
+        },
+        uv: {
+          text: "Imma weirdough"
+        },
+        wx: {
+          text: "I don't belong here"
+        },
+      };
+  
+      // Get the elements from the document
+      const welcomeSlide = document.getElementById("welcome-slide");
+      const welcomeText = document.getElementById("welcome-text");
+      const welcomeSubtext = document.getElementById("welcome-subtext");
+      const closeButton = document.getElementById("close-btn");
+  
+      // Define a variable to store the current language index
+      let langIndex = 0;
+  
+      // Define a function to change the language of the welcome slide
+      function changeLanguage() {
+        // Get the current language object from the languages array
+        const lang = languages[Object.keys(languages)[langIndex]];
+  
+        // Set the text and subtext of the welcome slide to the current language
+        welcomeText.textContent = lang.text;
+  
+        // Increment the language index by one
+        langIndex++;
+  
+        // If the language index is equal to the length of the languages array, reset it to zero
+        if (langIndex === Object.keys(languages).length) {
+          langIndex = 0;
+        }
+  
+        // Call the changeLanguage function again after 5 seconds
+        setTimeout(changeLanguage, 2000);
+      }
+  
+      // Call the changeLanguage function for the first time
+      changeLanguage();
+  
+      // Add an event listener to the close button to hide the welcome slide
+      closeButton.addEventListener("click", function() {
+        welcomeSlide.style.display = "none";
+      });
+
+      function scrollToSlide(id) {
+        var slide = document.getElementById(id);
+        slide.scrollIntoView({behavior: 'smooth'});
+      }
+  </script>
+  </body>
+</html>
