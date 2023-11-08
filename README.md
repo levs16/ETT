@@ -32,11 +32,11 @@ EditThisText - это простое приложение для редакти�
 
 Основное окно текстового редактора:
 
-<img src="EditThisText/pres/mainwin.png" alt="Основное окно">
+<img src="https://github.com/levs16/ETT/blob/main/ETT/EditThisText/pres/mainwin.png" alt="Основное окно">
 
 Окно редактора шрифта:
 
-<img src="EditThisText/pres/fontchangerwin.png" alt="Окно редактора шрифта">
+<img src="https://github.com/levs16/ETT/blob/main/ETT/EditThisText/pres/fontchangerwin.png" alt="Окно редактора шрифта">
 
 ## Благодарности
 
