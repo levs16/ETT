@@ -1,35 +1,45 @@
 # EditThisText
 
-EditThisText is a simple text editor application that allows you to create and edit text files using a graphical user interface. It is written in Python using the PyQt5 framework.
+EditThisText - это простое приложение для редактирования текста, которое позволяет создавать и редактировать текстовые файлы с помощью графического интерфейса пользователя. Оно написано на Python с использованием фреймворка PyQt5.
 
-## Features
+## Особенности
 
-- Create a new file or open an existing file from your computer
-- Save the file or save it as a different name or location
-- Copy, paste, cut, and select all the text in the editor
-- Change the font of the text using a font dialog
-- Exit the application from the menu or toolbar
-- Access the About window that displays the icon and the credits of the application
+С помощью EditThisText вы можете:
 
-## Requirements
+- Создавать новый файл или открывать существующий файл с вашего компьютера
+- Сохранять файл или сохранять его под другим именем или расположением
+- Копировать, вставлять, вырезать и выделять весь текст в редакторе
+- Изменять шрифт текста с помощью диалогового окна шрифта
+- Выходить из приложения из меню или панели инструментов
+- Доступ к окну "О программе", в котором отображаются значок и авторы приложения
 
-- Python 3.8 or higher
-- PyQt5 5.15.4 or higher
+## Требования
 
-## Installation
+Для работы EditThisText вам понадобятся:
 
-- Clone or download the repository from [GitHub]
-- Install the required packages using `pip install -r requirements.txt`
-- Run the main.py file using `python main.py`
+- Python 3.8 или выше
+- PyQt5 5.15.4 или выше
 
-## Screenshots
+## Установка
 
-The main window of the text editor (Ubuntu, Gnome):
-![Main Window in Ubuntu](screenshots/mainwinubuntu.png)
+Для установки EditThisText выполните следующие действия:
 
-The window of the font editor (Ubuntu, Gnome):
-![Font edit window in Ubuntu](screenshots/fonteditwinubuntu.png)
+- Клонируйте или загрузите репозиторий с [GitHub](github.com/levs16/ETT)
+- Установите необходимые пакеты с помощью команды pip install -r requirements.txt
+- Запустите файл main.py с помощью команды python main.py
 
-## Acknowledgments
+## Скриншоты
 
-- The icons used in this project are from https://icons8.com/ and https://pixabay.com/
+Основное окно текстового редактора:
+
+<img src="EditThisText/pres/mainwin.png" alt="Основное окно">
+
+Окно редактора шрифта:
+
+<img src="EditThisText/pres/fontchangerwin.png" alt="Окно редактора шрифта">
+
+## Благодарности
+
+Спасибо за ваш интерес к EditThisText. Пожалуйста, посетите репозиторий GitHub для получения дополнительной информации и обновлений.
+
+Значки созданы <a href="icons8.com">Icons8</a> и <a href="pixabay.com">Pixabay</a>.
